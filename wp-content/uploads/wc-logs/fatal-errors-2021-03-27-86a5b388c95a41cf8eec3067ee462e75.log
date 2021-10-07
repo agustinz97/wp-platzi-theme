@@ -1,0 +1,139 @@
+2021-03-27T02:37:32+00:00 CRITICAL Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of type object|string, array given in C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php:560
+Stack trace:
+#0 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php(560): method_exists(Array, 'get_meta')
+#1 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-payment-abstract.php(1630): WC_WooMercadoPago_Module::is_subscription(Array)
+#2 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-basic-gateway.php(199): WC_WooMercadoPago_Payment_Abstract->is_available()
+#3 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-payment-gateways.php(151): WC_WooMercadoPago_Basic_Gateway->is_available()
+#4 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3762): WC_Payment_Gateways->get_available_payment_gateways()
+#5 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): wc_get_pay_buttons('')
+#6 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart-totals.php(107): do_action('woocommerce_pro...')
+#9 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2061): wc_get_template('cart/cart-total...')
+#11 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): woocommerce_cart_totals('')
+#12 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart.php(172): do_action('woocommerce_car...')
+#15 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#17 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#18 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#19 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#20 [internal function]: do_shortcode_tag(Array)
+#21 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#22 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): do_shortcode('[woocommerce_ca...')
+#23 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(212): WP_Hook->apply_filters('[woocommerce_ca...', Array)
+#24 C:\xampp\htdocs\platzi-gift\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#25 C:\xampp\htdocs\platzi-gift\wp-content\themes\platzi-theme\page.php(11): the_content()
+#26 C:\xampp\htdocs\platzi-gift\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#27 C:\xampp\htdocs\platzi-gift\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#28 C:\xampp\htdocs\platzi-gift\index.php(17): require('C:\\xampp\\htdocs...')
+#29 {main}
+  thrown en C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php en la línea 560
+
+2021-03-27T02:38:08+00:00 CRITICAL Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of type object|string, array given in C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php:560
+Stack trace:
+#0 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php(560): method_exists(Array, 'get_meta')
+#1 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-payment-abstract.php(1630): WC_WooMercadoPago_Module::is_subscription(Array)
+#2 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-basic-gateway.php(199): WC_WooMercadoPago_Payment_Abstract->is_available()
+#3 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-payment-gateways.php(151): WC_WooMercadoPago_Basic_Gateway->is_available()
+#4 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3762): WC_Payment_Gateways->get_available_payment_gateways()
+#5 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): wc_get_pay_buttons('')
+#6 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart-totals.php(107): do_action('woocommerce_pro...')
+#9 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2061): wc_get_template('cart/cart-total...')
+#11 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): woocommerce_cart_totals('')
+#12 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart.php(172): do_action('woocommerce_car...')
+#15 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#17 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#18 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#19 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#20 [internal function]: do_shortcode_tag(Array)
+#21 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#22 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): do_shortcode('[woocommerce_ca...')
+#23 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(212): WP_Hook->apply_filters('[woocommerce_ca...', Array)
+#24 C:\xampp\htdocs\platzi-gift\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#25 C:\xampp\htdocs\platzi-gift\wp-content\themes\platzi-theme\page.php(11): the_content()
+#26 C:\xampp\htdocs\platzi-gift\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#27 C:\xampp\htdocs\platzi-gift\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#28 C:\xampp\htdocs\platzi-gift\index.php(17): require('C:\\xampp\\htdocs...')
+#29 {main}
+  thrown en C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php en la línea 560
+
+2021-03-27T02:39:55+00:00 CRITICAL Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of type object|string, array given in C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php:560
+Stack trace:
+#0 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php(560): method_exists(Array, 'get_meta')
+#1 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-payment-abstract.php(1630): WC_WooMercadoPago_Module::is_subscription(Array)
+#2 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-basic-gateway.php(199): WC_WooMercadoPago_Payment_Abstract->is_available()
+#3 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-payment-gateways.php(151): WC_WooMercadoPago_Basic_Gateway->is_available()
+#4 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3762): WC_Payment_Gateways->get_available_payment_gateways()
+#5 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): wc_get_pay_buttons('')
+#6 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\checkout\form-checkout.php(36): do_action('woocommerce_che...')
+#9 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#11 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#12 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#13 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#14 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#15 [internal function]: do_shortcode_tag(Array)
+#16 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#17 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#18 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#19 C:\xampp\htdocs\platzi-gift\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#20 C:\xampp\htdocs\platzi-gift\wp-content\themes\platzi-theme\page.php(11): the_content()
+#21 C:\xampp\htdocs\platzi-gift\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#22 C:\xampp\htdocs\platzi-gift\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\platzi-gift\index.php(17): require('C:\\xampp\\htdocs...')
+#24 {main}
+  thrown en C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php en la línea 560
+
+2021-03-27T02:40:12+00:00 CRITICAL Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of type object|string, array given in C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php:560
+Stack trace:
+#0 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php(560): method_exists(Array, 'get_meta')
+#1 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-payment-abstract.php(1630): WC_WooMercadoPago_Module::is_subscription(Array)
+#2 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\payments\class-wc-woomercadopago-basic-gateway.php(199): WC_WooMercadoPago_Payment_Abstract->is_available()
+#3 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-payment-gateways.php(151): WC_WooMercadoPago_Basic_Gateway->is_available()
+#4 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3762): WC_Payment_Gateways->get_available_payment_gateways()
+#5 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): wc_get_pay_buttons('')
+#6 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart-totals.php(107): do_action('woocommerce_pro...')
+#9 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2061): wc_get_template('cart/cart-total...')
+#11 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): woocommerce_cart_totals('')
+#12 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\templates\cart\cart.php(172): do_action('woocommerce_car...')
+#15 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#17 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#18 C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#19 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#20 [internal function]: do_shortcode_tag(Array)
+#21 C:\xampp\htdocs\platzi-gift\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#22 C:\xampp\htdocs\platzi-gift\wp-includes\class-wp-hook.php(292): do_shortcode('[woocommerce_ca...')
+#23 C:\xampp\htdocs\platzi-gift\wp-includes\plugin.php(212): WP_Hook->apply_filters('[woocommerce_ca...', Array)
+#24 C:\xampp\htdocs\platzi-gift\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#25 C:\xampp\htdocs\platzi-gift\wp-content\themes\platzi-theme\page.php(11): the_content()
+#26 C:\xampp\htdocs\platzi-gift\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#27 C:\xampp\htdocs\platzi-gift\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#28 C:\xampp\htdocs\platzi-gift\index.php(17): require('C:\\xampp\\htdocs...')
+#29 {main}
+  thrown en C:\xampp\htdocs\platzi-gift\wp-content\plugins\woocommerce-mercadopago\includes\module\class-wc-woomercadopago-module.php en la línea 560
+
+2021-03-27T02:43:27+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en C:\xampp\htdocs\platzi-gift\wp-content\plugins\woo-product-excel-importer\Classes\PHPExcel\Shared\ZipStreamWrapper.php en la línea 84
+
+2021-03-27T02:52:38+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en C:\xampp\htdocs\platzi-gift\wp-content\plugins\webd-woocommerce-product-excel-importer-bulk-edit\Classes\PHPExcel\Shared\ZipStreamWrapper.php en la línea 84
+
+2021-03-27T02:53:22+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en C:\xampp\htdocs\platzi-gift\wp-content\plugins\webd-woocommerce-product-excel-importer-bulk-edit\Classes\PHPExcel\Shared\ZipStreamWrapper.php en la línea 84
+
+2021-03-27T02:54:11+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en C:\xampp\htdocs\platzi-gift\wp-content\plugins\wp-all-import\classes\PHPExcel\Shared\String.php en la línea 526
+
